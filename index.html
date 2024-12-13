@@ -1,11 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynamic Web Features</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.collapsible {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.collapsible:hover {
+  background-color: #45a049;
+}
+
+.active {
+  background-color: #367c39;
+}
+
+.content {
+  padding: 15px;
+  display: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin: 8px 0;
+}
+
+form label:hover {
+  color: #4CAF50;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .collapsible {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+}
+</style>
 </head>
 <body>
-    <button>Rokib Hasan</button>
+
+<h1 style="text-align: center; color: #333; padding: 20px;">Dynamic Web Features</h1>
+
+<button type="button" class="collapsible">WebSite Types</button>
+<div class="content">
+    <form>
+        <label><input type="checkbox" name="features" value="Portfolio Personal"> Portfolio (Personal)</label>
+        <label><input type="checkbox" name="features" value="Portfolio Business"> Portfolio (Business)</label>
+        <label><input type="checkbox" name="features" value="E-commerce"> E-commerce</label>
+        <label><input type="checkbox" name="features" value="Education"> Education (2 Types)</label>
+        <label><input type="checkbox" name="features" value="POS"> POS (Point Of Sell)</label>
+        <label><input type="checkbox" name="features" value="SMS"> SMS (School Management System)</label>
+        <label><input type="checkbox" name="features" value="Customer Management"> Customer Management</label>
+        <label><input type="checkbox" name="features" value="Stuff Management"> Stuff Management</label>
+        <label><input type="checkbox" name="features" value="Pharmacy"> Pharmacy</label>
+        <label><input type="checkbox" name="features" value="Travel & Tours"> Travel & Tours</label>
+        <label><input type="checkbox" name="features" value="News Portal"> News Portal</label>
+        <label><input type="checkbox" name="features" value="Garments"> Garments</label>
+        <label><input type="checkbox" name="features" value="Blog"> Blog</label>
+    </form>
+</div>
+
+<button type="button" class="collapsible">Domain & Hosting</button>
+<div class="content">
+    <form>
+        <label><input type="checkbox" name="services" value="Domain Buy"> Domain Buy</label>
+        <label><input type="checkbox" name="services" value="Hosting Buy"> Hosting Buy</label>
+        <label><input type="checkbox" name="services" value="Domain & Hosting Connect"> Domain & Hosting Connect</label>
+        <label><input type="checkbox" name="services" value="WebSite Publish"> WebSite Publish</label>
+        <label><input type="checkbox" name="services" value="Type Of WebSite Publish"> Type Of WebSite Publish (Front-End / Back-End)</label>
+        <label><input type="checkbox" name="services" value="Database Add"> Database Add</label>
+        <label><input type="checkbox" name="services" value="C-panel Access"> C-panel Access</label>
+        <label><input type="checkbox" name="services" value="Domain Transfer"> Domain Transfer</label>
+        <label><input type="checkbox" name="services" value="Domain Renew"> Domain Renew</label>
+        <label><input type="checkbox" name="services" value="SSL Certificate"> SSL Certificate</label>
+        <label><input type="checkbox" name="services" value="Sub-Domain"> Sub-Domain</label>
+    </form>
+</div>
+
+<button type="button" class="collapsible">WebSite Tools</button>
+<div class="content"> 
+    <form>
+        <label><input type="checkbox" name="features" value="FavIcon"> FavIcon</label>
+        <label><input type="checkbox" name="features" value="LoGo"> LoGo</label>
+        <label><input type="checkbox" name="features" value="Copyright"> Copyright</label>
+        <label><input type="checkbox" name="features" value="Register With Google Account"> Register With Google Account</label>
+        <label><input type="checkbox" name="features" value="Show Password Option"> Show Password Option (Register / Login)</label>
+        <label><input type="checkbox" name="features" value="Contact"> Contact (Phone / Whatsapp / Messenger / Email / YouTube)</label>
+        <label><input type="checkbox" name="features" value="Register"> Register (Admin / Student / Teacher / User / Guest)</label>
+        <label><input type="checkbox" name="features" value="Login"> Login (Admin / Student / Teacher / User / Guest)</label>
+        <label><input type="checkbox" name="features" value="Logout"> Logout (Admin / Student / Teacher / User / Guest)</label>
+        <label><input type="checkbox" name="features" value="Forgot Password"> Forgot Password (Admin / Student / Teacher / User / Guest)</label>
+        <label><input type="checkbox" name="features" value="Email Verification"> Email Verification (Admin / Student / Teacher / User / Guest)</label>
+        <label><input type="checkbox" name="features" value="Login Code Verification"> Login Code Verification (Phone / Email) (Admin / Student / Teacher / User / Guest)</label>
+        <label><input type="checkbox" name="features" value="Banner"> Banner (Image Support)</label>
+        <label><input type="checkbox" name="features" value="Product/Service Image"> Product / Service (Image Support)</label>
+        <label><input type="checkbox" name="features" value="Product/Service Video"> Product / Service (Video Support)</label>
+        <label><input type="checkbox" name="features" value="Payment"> Payment (Cash On / Bkash / Card)</label>
+        <label><input type="checkbox" name="features" value="Slug"> Slug (KeyWords)</label>
+        <label><input type="checkbox" name="features" value="Dashboard Setting"> Dashboard Setting (Username / Password / Etc)</label>
+        <label><input type="checkbox" name="features" value="In Time 1 Device Login"> In Time 1 Device Login (Like Whatsapp)</label>
+        <label><input type="checkbox" name="features" value="Add Category/Sub Category"> Add Category & Sub Category</label>
+        <label><input type="checkbox" name="features" value="Video From Drive Or youTube"> Video From Drive Or youTube</label>
+        <label><input type="checkbox" name="features" value="Security">Security</label><br>
+    </form>
+</div>
+
+<button type="button" class="collapsible">Wordpress</button>
+<div class="content">
+    <form>
+        <label><input type="checkbox" name="features" value="Free Theme"> Free Theme</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Paid Theme</label>
+        <label><input type="checkbox" name="features" value="Theme Customization"> Theme Customization</label>
+        <label><input type="checkbox" name="features" value="Plug In & Plug In Development"> Plug In & Plug In Development</label>
+        <label><input type="checkbox" name="features" value="Theme Development"> Theme Development</label>
+    </form>
+</div>
+<button type="button" class="collapsible">Language / Library / Framework</button>
+<div class="content">
+    <form>
+        <label><input type="checkbox" name="features" value="Free Theme"> HTML</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> CSS</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Bootstrap</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Java Script</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> jQuery</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Vue JS</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> React JS</label> <br>
+        <label><input type="checkbox" name="features" value="Paid Theme"> MY SQL</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> PhP</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Laravel</label> <br>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Git & GitHub</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Font Awesome</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Google Fonts</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> ChatGPT</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Figma</label>
+    </form>
+      </div>
+<button type="button" class="collapsible">Important Software</button>
+<div class="content">
+    <form>
+        <label><input type="checkbox" name="features" value="Free Theme"> MS Office (Windows Default)</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Notepad (Windows Default)</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> AnyDesk</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> LightShot</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Avro</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Paint (Windows Default)</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> HandBrake (Video Compressor)</label> <br>
+        <label><input type="checkbox" name="features" value="Paid Theme"> CapCut (Video Editor)</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> OpenShot (Video Editor)</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> RecForth (Screen Recorder)</label> <br>
+        <label><input type="checkbox" name="features" value="Paid Theme"> ThunderShare Free Screen Recorder</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> CodeBlocs</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> VS Code</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Xampp</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Node JS</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Composer</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Git</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Wise Folder Hider (Windows App From Microsoft Store)</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Zoom</label>
+    </form>
+      </div>
+<button type="button" class="collapsible">Language / Library / Framework</button>
+<div class="content">
+    <form>
+        <label><input type="checkbox" name="features" value="Free Theme"> Alok Shikha</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> LensCafe Studio</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> GoliBazar</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Others</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> ICT Class</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> WebSite Class</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Language Class</label> <br>
+        <label><input type="checkbox" name="features" value="Paid Theme"> WebSite Sell</label>
+        <label><input type="checkbox" name="features" value="Paid Theme"> Software Company Job</label>
+      
+    </form>
+      </div>
+   
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 </body>
 </html>
