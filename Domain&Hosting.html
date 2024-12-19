@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynamic Web Features</title>
+<style>
+    /* git push -u origin main */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.collapsible {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.collapsible:hover {
+  background-color: #45a049;
+}
+
+.active {
+  background-color: #367c39;
+}
+
+.content {
+  padding: 15px;
+  display: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin: 8px 0;
+}
+
+form label:hover {
+  color: #4CAF50;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .collapsible {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center; color: #333; padding: 20px;">Domain & Hosting</h1>
+
+<button type="button" class="collapsible">Registration For Domain</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Domain Buy</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Hosting Buy</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Domain & Hosting Connect</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Website Publish</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Database Add</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Type Of Website (Front End / Back End)</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Domain Transfer</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Domain Renew</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">SSL Certificate</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Sub Domain</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Domain Add On</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">C Panel Access</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Some Domains Used In 1 Hosting</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Dashboard Password Setup</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Source Code (Backup / Change / Hide)</button>
+<div class="content">
+ 
+</div>
+<button type="button" class="collapsible">Vercel.APP</button>
+<div class="content">
+ 
+</div>
+
+
+
+
+   
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
